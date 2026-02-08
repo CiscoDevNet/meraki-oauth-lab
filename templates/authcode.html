@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Meraki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .connect-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .connect-button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Authorization Code</h2>
+    {{ authcode }}
+    
+    <h1>Generate Access Token</h1>
+    <a href="/generate_access_token"><button class="access-token-button">Generate Access Token</button></a>
+</body>
+</html>
